@@ -92,17 +92,22 @@ body{
 }
 
 @media screen and (min-width: 768px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .container{
         height: 100vh;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(4, 200px);
+        grid-template-rows: 250px 250px;
         grid-template-areas: 
         "daniel daniel jonathan kira"
         "jeanette patrick patrick kira";
         gap: 20px;
-        justify-content: center;
-        align-content: center;
+        width: 80;
+
     }
 
     .daniel{
